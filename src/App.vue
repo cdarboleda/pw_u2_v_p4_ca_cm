@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="HOLA MUNDO"/>
-  <HelloWorld msg="HOLA MUNDO"/>
+  <img alt="Vue logo" src="./assets/toon_link.webp" width="100">
+  <Contador titulo="Estudiante" valor2="2"/>
+  <Contador titulo="Profesor" valor2="7"/>
 </template>
 
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Contador from './components/Contador.vue' //Referencia del componente
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Contador
   }
 }
 </script>
