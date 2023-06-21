@@ -1,28 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/toon_link.webp" width="100">
-  <Contador titulo="Estudiante" valor2="2"/>
-  <Contador titulo="Profesor" valor2="7"/>
+  <!-- <img alt="Vue logo" src="./assets/toon_link.webp" width="100"> -->
+  <!-- <Contador titulo="Estudiante" valor2="2"/>
+  <Contador titulo="Profesor" valor2="7"/> -->
+  <Calculadora/>
 </template>
 
 
 <script>
-  import Contador from './components/Contador.vue' //Referencia del componente
-
+  //import Contador from './components/Contador.vue' //Referencia del componente
+  import Calculadora from './components/Calculadora.vue';
 export default {
   name: 'App',
   components: {
-    Contador
+   // Contador,
+    Calculadora
   }
 }
 </script>
 
 <style>
-#app {
+ #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
   margin-top: 60px;
-}
+} 
 </style>
