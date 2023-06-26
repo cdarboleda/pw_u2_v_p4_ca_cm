@@ -11,7 +11,7 @@
 			<h2>{{ pregunta }}</h2>
 			<h1>{{ respuesta }}</h1>
 			<h3>{{ contadorYes }}</h3>
-			<h1 v-if="gano">Tres Yes seguidos. Ganaste!!</h1>
+			<h1 style="color:yellow" v-if="gano">Tres Yes seguidos. Ganaste!!</h1>
 		</div>
 	</div>
 </template>
@@ -75,41 +75,5 @@ export default {
 </script>
 
 <style>
-img,
-.bg-dark {
-	height: 100vh;
-	width: 100vw;
-	left: 0px;
-	max-width: 100%;
-	max-height: 100%;
-	position: fixed;
-	top: 0px;
-}
 
-.bg-dark {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.container {
-	position: relative;
-}
-
-input {
-	width: 250px;
-	padding: 10px 15px;
-	border-radius: 5px;
-	border: none;
-}
-
-p,
-h1,
-h2,
-h3 {
-	color: white;
-}
-
-p {
-	font-size: 20px;
-	margin-top: 10px;
-}
 </style>
