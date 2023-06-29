@@ -1,6 +1,6 @@
 <template>
-  <CaracolaMagica/>
-  <!-- <PokemonPage/> -->
+  <!-- <CaracolaMagica/> -->
+  <PokemonPage/>
 </template>
 
 
@@ -25,5 +25,8 @@ export default {
   text-align: center;
   /* color: #2c3e50; */
   margin-top: 60px;
+
+  /* display: flex;
+  flex-direction: row; */
 } 
 </style>
