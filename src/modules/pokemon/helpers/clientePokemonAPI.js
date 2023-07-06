@@ -7,21 +7,15 @@ function getRandom (min, max) {
 //array de cuatro numeros aleatorios
 const getNumericArray = ()=>{
     const arreglo = []
-
     for(let i=0;i<4;i++){
         arreglo.push(getRandom(1, 600));
     }
-
     return arreglo;
 }
 
 //metodo para consumirAPI, que me devuelva un pokemon de acuerdo a un id
 const consumeAPI =  async (id) => {
     return await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then(r=>r.json())
-    // const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then(
-    //     (r) => r.json()
-    //   );
-    //   return data;
 }
 
 
