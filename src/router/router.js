@@ -5,10 +5,10 @@ const routes = [
         path: "/",
         component: ()=>import ('../modules/pokemon/pages/Bienvenida.vue')
     },
-    {
-        path: "/juego",
-        component: ()=>import ('../modules/pokemon/pages/JuegoPage.vue')
-    },
+    // {
+    //     path: "/juego",
+    //     component: ()=>import ('../modules/pokemon/pages/JuegoPage.vue')
+    // },
     {
         path: "/premios",
         component: ()=>import ('../modules/pokemon/pages/PremiosPage.vue')

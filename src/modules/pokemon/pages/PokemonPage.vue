@@ -18,7 +18,7 @@
 
 		<div v-if="showResult">
 			<div v-if="showWin">
-        <h1>Ganaste</h1>
+        <h1>Ganaste {{mensaje}}</h1>
 				<div class="result">
 					<p><b>Puntaje:</b> {{ this.puntaje }}</p>
 					<p><b>Intentos:</b> {{ this.intentos }}</p>
@@ -49,6 +49,7 @@
 				puntaje: 0,
 				intentos: 0,
 				wrongChoice: false,
+				mensaje: '',
 				pokemonImgStart: 'https://camo.githubusercontent.com/5d1fe59c3f0e4cfb5480bb8d8b1eb3ba58906acef846904fde8afcc5f773adbb/68747470733a2f2f692e696d6775722e636f6d2f583962314b75362e706e67',
 			}
 		},
@@ -90,12 +91,15 @@
 				switch (this.intentos) {
 					case 1:
 						this.puntaje = 5
+						this.mensaje = 'un balón de fútbol'
 						break;
 					case 2:
 						this.puntaje = 2
+						this.mensaje = 'un cupón de descuento'
 						break;
 					default:
 						this.puntaje = 1
+						this.mensaje = 'experiencia :D'
 						break;
 				}
 
@@ -127,7 +131,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.result {
 		display: flex;
 		flex-direction: row;
